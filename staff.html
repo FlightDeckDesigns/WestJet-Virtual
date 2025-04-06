@@ -1,43 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff - WestJet Virtual</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Staff - WestJet Virtual</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007d89;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .staff-card {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .staff-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .staff-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .staff-card a {
+      color: #007d89;
+      text-decoration: none;
+    }
+
+    .staff-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #007d89;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .disclaimer {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/your-username/WestJet-Virtual/main/images/westjet-logo.png" alt="WestJet Virtual Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fleet.html">Fleet</a></li>
-                <li><a href="staff.html">Staff</a></li>
-                <li><a href="join.html">Join Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>WestJet Virtual</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="staff.html">Staff</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="staff">
-            <h2>Our Staff</h2>
-            <p>Meet the team leading WestJet Virtual to new heights in Infinite Flight.</p>
-            <div class="staff-grid">
-                <div class="staff-item">
-                    <img src="https://raw.githubusercontent.com/your-username/WestJet-Virtual/main/images/pilot_infiniteflight_profile.jpg" alt="Pilot_InfiniteFlight">
-                    <h3><a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank">Pilot_InfiniteFlight</a></h3>
-                    <p><strong>CEO</strong></p>
-                    <p>A passionate Infinite Flight aviator dedicated to building a vibrant WestJet Virtual community.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main>
+    <h2>Meet Our Leadership</h2>
+    <div class="staff-card">
+      <img src="https://community.infiniteflight.com/user_avatar/community.infiniteflight.com/pilot_infiniteflight/120/754601_2.png" alt="Pilot_InfiniteFlight Profile Picture">
+      <h3>Pilot_InfiniteFlight</h3>
+      <p>Chief Executive Officer (CEO)</p>
+      <p>Founder and visionary of WestJet Virtual. Passionate about aviation and leadership within the Infinite Flight VA community.</p>
+      <p><a href="https://community.infiniteflight.com/u/pilot_infiniteflight/" target="_blank">View Profile</a></p>
+    </div>
+  </main>
 
-    <footer>
-        <p>© 2025 WestJet Virtual. Not affiliated with WestJet Airlines. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
+    <p class="disclaimer">Not affiliated with or endorsed by WestJet Airlines Ltd.</p>
+  </footer>
 </body>
 </html>
