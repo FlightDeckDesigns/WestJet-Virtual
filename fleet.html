@@ -4,78 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Fleet - WestJet Virtual</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #007d89;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .fleet-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .aircraft {
-      background-color: white;
-      border-radius: 8px;
-      padding: 15px;
-      text-align: center;
-      width: 300px;
-    }
-
-    .aircraft img {
-      max-width: 100%;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      background-color: #007d89;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-
-    .disclaimer {
-      font-size: 0.9em;
-      color: #ccc;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -89,22 +18,24 @@
     </nav>
   </header>
 
+  <button class="toggle-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
   <main>
     <h2>Our Fleet</h2>
     <p>Explore the aircraft we operate in Infinite Flight:</p>
     <div class="fleet-container">
       <div class="aircraft">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/WestJet_Boeing_737-800_C-FWSK.jpg" alt="Boeing 737-800">
+        <img src="https://i.imgur.com/p9EFVwA.jpg" alt="Boeing 737-800">
         <h3>Boeing 737-800</h3>
         <p>Reliable and efficient for short to medium-haul routes.</p>
       </div>
       <div class="aircraft">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Westjet_Boeing_787-9_C-GUDH.jpg" alt="Boeing 787-9">
+        <img src="https://i.imgur.com/NCDRJ2a.jpg" alt="Boeing 787-9">
         <h3>Boeing 787-9 Dreamliner</h3>
         <p>Long-haul flagship offering comfort and range.</p>
       </div>
       <div class="aircraft">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/WestJet_Encore_Q400.jpg" alt="De Havilland Dash 8 Q400">
+        <img src="https://i.imgur.com/IwKdpJj.jpg" alt="Dash 8 Q400">
         <h3>Dash 8 Q400</h3>
         <p>Used for regional flights with short runways and quick turnarounds.</p>
       </div>
@@ -115,5 +46,11 @@
     <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
     <p class="disclaimer">Not affiliated with or endorsed by WestJet Airlines Ltd.</p>
   </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
 </body>
 </html>
