@@ -1,44 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WestJet Virtual - Infinite Flight</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WestJet Virtual - Infinite Flight</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #007d89;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    .logo img {
+      width: 180px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/WestJet_Boeing_737-800_C-FWSK.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .join {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .join iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #007d89;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .slogan {
+      font-style: italic;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .disclaimer {
+      font-size: 0.9em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="https://raw.githubusercontent.com/your-username/WestJet-Virtual/main/images/westjet-logo.png" alt="WestJet Virtual Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="fleet.html">Fleet</a></li>
-                <li><a href="staff.html">Staff</a></li>
-                <li><a href="join.html">Join Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/WestJet_Logo.svg" alt="WestJet Virtual Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="banner">
-        <img src="https://raw.githubusercontent.com/your-username/WestJet-Virtual/main/images/westjet-banner.jpg" alt="WestJet Virtual Banner">
-        <div class="slogan">
-            <h1>Where Your Story Takes Off</h1>
-            <p>Welcome to WestJet Virtual, your premier Infinite Flight experience inspired by WestJet Airlines.</p>
-        </div>
+  <section class="hero">
+    <h1>Welcome to WestJet Virtual</h1>
+    <p>Your Journey in Infinite Flight Begins Here</p>
+    <p class="slogan">"Where Virtual Meets Professionalism"</p>
+  </section>
+
+  <main>
+    <section>
+      <h2>About WestJet Virtual</h2>
+      <p>
+        WestJet Virtual is a community-driven airline operating within the Infinite Flight simulator. We simulate real-world WestJet operations while providing a fun, engaging, and professional virtual flying experience. Join us as we connect the Infinite Flight skies.
+      </p>
     </section>
 
-    <main>
-        <section class="intro">
-            <h2>About WestJet Virtual</h2>
-            <p>WestJet Virtual brings the spirit of WestJet Airlines to the Infinite Flight skies. Fly with us and experience a community built on passion, professionalism, and fun.</p>
-            <a href="join.html" class="button">Apply to Join</a>
-        </section>
-    </main>
+    <section class="join" id="join">
+      <h2>Apply to Join</h2>
+      <!-- Replace the src with your actual Google Form embed link -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScREPLACE_THIS_LINK/viewform?embedded=true">Loading…</iframe>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2025 WestJet Virtual. Not affiliated with WestJet Airlines. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
+    <p class="disclaimer">Not affiliated with or endorsed by WestJet Airlines Ltd. This is a fan-based virtual airline for Infinite Flight purposes only.</p>
+  </footer>
 </body>
 </html>
