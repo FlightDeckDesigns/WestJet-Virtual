@@ -1,138 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WestJet Virtual - Infinite Flight</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #007d89;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
-
-    .logo img {
-      width: 180px;
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    nav ul li {
-      display: inline;
-      margin: 0 15px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/WestJet_Boeing_737-800_C-FWSK.jpg') no-repeat center center/cover;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-    }
-
-    main {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .join {
-      text-align: center;
-      margin-top: 40px;
-    }
-
-    .join iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #007d89;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-
-    .slogan {
-      font-style: italic;
-      font-size: 1.1em;
-      margin-top: 10px;
-    }
-
-    .disclaimer {
-      font-size: 0.9em;
-      color: #ccc;
-      margin-top: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WestJet Virtual</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/WestJet_Logo.svg" alt="WestJet Virtual Logo" />
-    </div>
+    <img src="images/westjet_logo.png" alt="WestJet Virtual Logo" class="logo">
+    <h1>Welcome to WestJet Virtual</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="fleet.html">Fleet</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="#join">Join</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#fleet">Our Fleet</a></li>
+        <li><a href="#routes">Routes</a></li>
+        <li><a href="#staff">Our Staff</a></li>
+        <li><a href="#join">Join Us</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero">
-    <h1>Welcome to WestJet Virtual</h1>
-    <p>Your Journey in Infinite Flight Begins Here</p>
-    <p class="slogan">"Where Virtual Meets Professionalism"</p>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>WestJet Virtual is a premier virtual airline dedicated to providing an immersive and realistic flight simulation experience. We operate primarily on the Infinite Flight platform, offering pilots a chance to fly a variety of routes inspired by the real-world operations of WestJet Airlines.</p>
+    <img src="images/westjet_flight.jpg" alt="WestJet Aircraft in Flight" class="responsive-img">
   </section>
 
-  <main>
-    <section>
-      <h2>About WestJet Virtual</h2>
-      <p>
-        WestJet Virtual is a community-driven airline operating within the Infinite Flight simulator. We simulate real-world WestJet operations while providing a fun, engaging, and professional virtual flying experience. Join us as we connect the Infinite Flight skies.
-      </p>
-    </section>
+  <section id="fleet">
+    <h2>Our Fleet</h2>
+    <p>Our diverse fleet mirrors that of WestJet Airlines, including aircraft such as the Boeing 737 series and the Bombardier Q400.</p>
+    <div class="fleet-gallery">
+      <img src="images/boeing_737.jpg" alt="Boeing 737" class="fleet-img">
+      <img src="images/q400.jpg" alt="Bombardier Q400" class="fleet-img">
+    </div>
+  </section>
 
-    <section class="join" id="join">
-      <h2>Apply to Join</h2>
-      <!-- Replace the src with your actual Google Form embed link -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScREPLACE_THIS_LINK/viewform?embedded=true">Loading…</iframe>
-    </section>
-  </main>
+  <section id="routes">
+    <h2>Routes</h2>
+    <p>We offer a wide range of domestic and international routes, connecting major cities across North America and beyond.</p>
+    <img src="images/route_map.jpg" alt="Route Map" class="responsive-img">
+  </section>
+
+  <section id="staff">
+    <h2>Our Staff</h2>
+    <ul>
+      <li><strong>Chief Executive Officer (CEO):</strong> Oversees all operations and strategic planning.</li>
+      <li><strong>Chief Operating Officer (COO):</strong> Manages daily operations and ensures departmental coordination.</li>
+      <li><strong>Flight Operations Manager:</strong> Supervises pilot schedules and flight procedures.</li>
+      <li><strong>Human Resources Manager:</strong> Handles pilot recruitment and internal communications.</li>
+      <li><strong>Events Director:</strong> Organizes and promotes virtual events.</li>
+      <li><strong>Training Director:</strong> Oversees pilot training programs.</li>
+      <li><strong>Media & Design Manager:</strong> Manages branding and promotional materials.</li>
+      <li><strong>Chief Technology Officer (CTO):</strong> Maintains the website and technical systems.</li>
+    </ul>
+  </section>
+
+  <section id="join">
+    <h2>Join Us</h2>
+    <p>Become a part of WestJet Virtual and elevate your flight simulation experience. <a href="apply.html">Apply now</a> to start your journey with us.</p>
+  </section>
 
   <footer>
     <p>&copy; 2025 WestJet Virtual. All rights reserved.</p>
-    <p class="disclaimer">Not affiliated with or endorsed by WestJet Airlines Ltd. This is a fan-based virtual airline for Infinite Flight purposes only.</p>
   </footer>
 </body>
 </html>
